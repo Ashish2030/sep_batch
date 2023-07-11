@@ -1,0 +1,20 @@
+CREATE DATABASE databasename;
+DROP DATABASE databasename;
+BACKUP DATABASE testDB TO DISK = 'D:\backups\testDB.bak';
+CREATE TABLE Persons ( PersonID int, LastName varchar(255) );
+ insert into users (personID, fname, lname, age) values(1,'ashish', 'kumar', 50),(2,"sanket", "kumar", 24); 
+create table users(personID int, fname varchar(250), lname varchar(250), age int, PRIMARY KEY(personID));  
+TAUNCATE table table_name;
+desc emp2 
+DROP TABLE table_name;
+ALTER TABLE table_name ADD column_name datatype;
+ALTER TABLE table_name DROP COLUMN column_name;
+ALTER TABLE table_name RENAME COLUMN old_name to new_name;
+show databases; 
+drop database practise; 
+create table users(personID int not null auto_increment, fname varchar(250) default 'undefined' , lname varchar(250), age int, PRIMARY KEY(personID)); 
+select * from users where age = 50 OR age = 24; 
+select distinct age from users;  
+select * from users where fname like "%a"; 
+ select personID as id, fname as firstName from users;  
+create table date_dummy(name varchar(10), dob data, dot time, insertdate datetime);   
